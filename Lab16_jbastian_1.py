@@ -27,7 +27,7 @@ def dictionary_builder(submission_dicts, submission_id, response_dict):
             'comments': response_dict['descendants'],
         }
     except:
-        print("TypeError")
+        print("KeyError 'descendants' not found.")
     else:
         submission_dicts.append(submission_dict)
 
