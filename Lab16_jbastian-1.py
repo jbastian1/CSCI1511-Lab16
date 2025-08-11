@@ -1,7 +1,7 @@
 """
 Program: Refactored Code for hn_submissions.py
 Author: Jonathan Bastian
-The program refactors code from 'hn_submissions.py' to avoid terinating because of a KeyError when runnning the script.
+The program refactors code from 'hn_submissions.py' to avoid terinating because of a KeyError when runnning the script. Adding a try, except, error, and a comment for exception.
 Date: Sunday, August 10, 2025
 """
 
@@ -47,10 +47,3 @@ for submission_dict in submission_dicts:
     print(f"\nTitle: {submission_dict['title']}")
     print(f"Discussion link: {submission_dict['hn_link']}")
     print(f"Comments: {submission_dict['comments']}")
-
-
-# Process information about each submission. 2 submission_ids = r.json()
-
-# Lab 16: empty repo modules only needed; python3 -m pip install requests, link to repository (hard to forget data file)        ?not having an exception?
-# 1 in-textbook code CH17 hn_submissions.py take it load in - will cause exception - not everything has descendants likely - have not hit error - rewrite build dictionary for each block
-# 2 plotting: python_repos_visual.py in the textbook & in resources rename python, from GitHub API, looks for python related projects and how many stars they have, rest is replace Python (in text, might have to change stas number 10000) with a different programming language
